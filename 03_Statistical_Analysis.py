@@ -7,11 +7,11 @@ from config import token
 
 # # User dependent variables - ORIGINAL
 # raw_data_path = "./data/raw/georef-switzerland-kanton.geojson"
-# proc_data_path = "./data/processed/rents_with_coords_clean.csv"
+# proc_data_path = "./data/processed/rent_data_all.csv"
 
 # User dependent variables - RE-Defined using Absolute Paths
 raw_data_path = os.path.abspath(os.path.join("../.", "data/raw/", "georef-switzerland-kanton.geojson"))
-proc_data_path = os.path.abspath(os.path.join("../.", "data/processed/", "rents_with_coords_clean.csv"))
+proc_data_path = os.path.abspath(os.path.join("../.", "data/processed/", "rent_data_all.csv"))
 
 # Secrets (accessed via st.secrets())
 #mapbox_access_token = st.secrets["MAPBOX_ACCESS_TOKEN"]
