@@ -26,7 +26,7 @@ The following partitioning seemed to give interesting insights:
 * `≥ CHF 26.10/m²` — the most expensive 15% of all listings (highest rent per square meter)
 
 In the plots below you can see **(A)** how these apartments are distributed geographically, 
-**(B)** how their floor space is related to their rent and **(C)** what cantons have most listings and in what 
+**(B)** how their floor space is related to their rent and **(C)** what neightborhoods have most listings and in what 
 categories they fall.
 
 Finally, you can use the Selection Criteria on the left to explore more in detail which places on the map offer 
@@ -62,7 +62,7 @@ raw_data_path = os.path.abspath(os.path.join("../.", "data/raw/", "georef-switze
 mapbox_token = token
 
 # Load the data
-df_proc, cantons = hp.load_data(raw_data_path, proc_data_path)
+df_proc, neightborhoods = hp.load_data(raw_data_path, proc_data_path)
 df_plotting = deepcopy(df_proc)
 
 # Sidebar
@@ -85,7 +85,7 @@ csv = hp.convert_df(df_proc)
 st.download_button(
     label="Download Processed Data (csv)",
     data=csv,
-    file_name='swiss_rents_df.csv',
+    file_name='swiss_rents_df.csv', ## Where is this file located???a
     mime='text/csv',
 )
 st.write("The unprocessed data was made available for use for any purpose (including commercial) under a creative commons license at: https://datenportal.info/wohnungsmarkt/wohnungsmieten/")
