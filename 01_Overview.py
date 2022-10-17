@@ -47,7 +47,7 @@ st.text("")
 
 
 # User dependent variables - Defined using Absolute Paths
-proc_data_path = os.path.abspath(os.path.join("../.", "data/processed/", "rents_with_coords_clean.csv"))
+proc_data_path = os.path.abspath(os.path.join("../.", "data/processed/", "rent_data_all.csv"))
 raw_data_path = os.path.abspath(os.path.join("../.", "data/raw/", "georef-switzerland-kanton.geojson"))
 
 # User dependent variables - ORIGINAL file references
